@@ -1,0 +1,1619 @@
+title Clone Cleanup 0.1.37-dev
+author vexorian
+homepage vexorian.com
+realtime_interval 0.06
+(debug 
+verbose_logging)
+text_color #b0b0b0 
+background_color #000000
+run_rules_on_level_start
+(throttle_movement 0.2)
+
+========
+OBJECTS
+========
+
+Background 
+#484848 red
+00000
+00000
+00000
+00000
+00000
+
+Background1
+transparent
+
+
+Background2
+#525252
+00000
+00000
+00000
+00000
+00000
+
+
+(11100
+11100
+00011
+00011
+00011)
+
+BorderBackground
+#000000
+
+Target 
+#b0b000 #FFFF00
+11.00
+1...0
+.....
+0...1
+00.11
+
+TargetSoundPlayer
+#FFFF00 #b0b000
+11.00
+1...0
+.....
+0...1
+00.11
+
+Wall 
+#989898 #888888
+00111
+00111
+00111
+11000
+11000
+
+WallUpBorder
+#d0d0d0
+00000
+.....
+.....
+.....
+.....
+
+WallLeftBorder
+#d0d0d0
+0....
+0....
+0....
+0....
+0....
+
+WallRightBorder
+#606060
+....0
+....0
+....0
+....0
+....0
+
+WallDownBorder
+#606060
+.....
+.....
+.....
+.....
+00000
+
+ConveyorUpBorder
+#3f3f3f
+00000
+.....
+.....
+.....
+.....
+
+ConveyorLeftBorder
+#3f3f3f
+0....
+0....
+0....
+0....
+0....
+
+ConveyorRightBorder
+#626262
+....0
+....0
+....0
+....0
+....0
+
+ConveyorDownBorder
+#626262
+.....
+.....
+.....
+.....
+00000
+
+
+PlayerUp
+#4040FF Black #5050FF #4040FF
+.222.
+21013
+20003
+21113
+.333.
+
+PlayerDown
+#4040FF Black #5050FF #4040FF
+.222.
+21013
+20003
+21113
+.333.
+
+PlayerRight
+#4040FF Black #5050FF #4040FF
+.222.
+21013
+20003
+21113
+.333.
+
+PlayerLeft
+#4040FF Black #5050FF #4040FF
+.222.
+21013
+20003
+21113
+.333.
+
+PlayerStationaryReal
+#4040FF Black #5050FF #4040FF
+.222.
+21013
+20003
+21113
+.333.
+
+PlayerStationaryX1
+#4040FF Black #5050FF #4040FF
+.222.
+21013
+20003
+21113
+.333.
+
+PlayerStationaryX2
+#4040FF Black #5050FF #4040FF
+.222.
+21013
+20003
+21113
+.333.
+
+PlayerStationaryX3
+#4040FF Black #5050FF #4040FF
+.222.
+21013
+20003
+21113
+.333.
+
+
+FakePlayer
+#4040FF Black #5050FF #4040FF
+.222.
+21013
+20003
+21113
+.333.
+
+DeadPlayer 
+#8080FF Black #9090FF #7070FF
+.222.
+21013
+21013
+20003
+.313.
+
+
+Crate 
+#FFFFa0 #FFFF00 #b0b000
+.000.
+01112
+01112
+01112
+.222.
+
+
+Cloner
+Red #FF5050 Red
+.111.
+11211
+12221
+11211
+.111.
+
+Uncloner
+Red Black #800000 #ff3030
+.222.
+22222
+23332
+22222
+.222.
+
+ClonerFactory0
+#FF9740 #FF4040
+.000.
+01010
+00100
+01010
+.000.
+
+ClonerFactory1
+#FF9740 #FF4040
+.000.
+01010
+00100
+01010
+.000.
+
+ClonerFactory2
+#FF9740 #FF4040
+.000.
+01010
+00100
+01010
+.000.
+
+ClonerFactory3
+#FF9740 #FF4040
+.000.
+01010
+00100
+01010
+.000.
+
+ClonerFactory4
+#FF9740 #FF4040
+.000.
+01010
+00100
+01010
+.000.
+
+
+LogObject0
+gray black
+.0000
+.0110
+.0000
+.0110
+.0000
+
+LogObject1
+transparent
+
+LogObject2
+transparent
+
+BoxedCloner
+#909090 Red #c0c0c0 #202020
+.222.
+20103
+21013
+20103
+.333.
+
+LeftArrow
+Black #FFFF40 #FFFF80
+..022
+.0112
+01112
+.0112
+..022
+
+StaticLeftArrow
+Pink
+
+RightArrow
+Black #FFFF40 #FFFF80
+220..
+2110.
+21110
+2110.
+220..
+
+StaticRightArrow
+Pink
+
+DownArrow
+Black #FFFF40 #FFFF80
+22222
+21112
+01110
+.010.
+..0..
+
+StaticDownArrow
+Pink
+
+UpArrow
+Black #FFFF40 #FFFF80
+..0..
+.010.
+01110
+21112
+22222
+
+StaticUpArrow
+Pink
+
+LeftConveyor
+#525252 #484848 #707070
+00111
+00121
+00211
+00121
+00111
+
+LeftConveyorSprite0
+transparent
+
+LeftConveyorSprite1
+#525252 #484848 #707070
+01110
+01210
+02110
+01210
+01110
+
+LeftConveyorSprite2
+#525252 #484848 #707070
+11100
+12100
+21100
+12100
+11100
+
+LeftConveyorSprite3
+#525252 #484848 #707070
+11001
+21001
+11002
+21001
+11001
+
+LeftConveyorSprite4
+#525252 #484848 #707070
+10011
+10012
+10021
+10012
+10011
+
+
+RightConveyor
+#525252 #484848 #707070
+00111
+00121
+00112
+00121
+00111
+
+RightConveyorSprite0
+transparent
+
+RightConveyorSprite1
+#525252 #484848 #707070
+10011
+10012
+20011
+10012
+10011
+
+RightConveyorSprite2
+#525252 #484848 #707070
+11001
+21001
+12001
+21001
+11001
+
+RightConveyorSprite3
+#525252 #484848 #707070
+11100
+12100
+11200
+12100
+11100
+
+RightConveyorSprite4
+#525252 #484848 #707070
+01110
+01210
+01120
+01210
+01110
+
+
+UpConveyor
+#525252 #484848 #707070
+00000
+00000
+11211
+12121
+11111
+
+UpConveyorSprite0
+transparent
+
+UpConveyorSprite1
+#525252 #484848 #707070
+00000
+11211
+12121
+11111
+00000
+
+UpConveyorSprite2
+#525252 #484848 #707070
+11211
+12121
+11111
+00000
+00000
+
+UpConveyorSprite3
+#525252 #484848 #707070
+12121
+11111
+00000
+00000
+11211
+
+UpConveyorSprite4
+#525252 #484848 #707070
+11111
+00000
+00000
+11211
+12121
+
+DownConveyor
+#525252 #484848 #707070
+00000
+00000
+11111
+12121
+11211
+
+DownConveyorSprite0
+transparent
+
+DownConveyorSprite1
+#525252 #484848 #707070
+11211
+00000
+00000
+11111
+12121
+
+DownConveyorSprite2
+#525252 #484848 #707070
+12121
+11211
+00000
+00000
+11111
+
+DownConveyorSprite3
+#525252 #484848 #707070
+11111
+12121
+11211
+00000
+00000
+
+DownConveyorSprite4
+#525252 #484848 #707070
+00000
+11111
+12121
+11211
+00000
+
+
+Earth
+#9E8933 #9E6E33
+.111.
+11111
+.1011
+1.11.
+011.1
+
+LaserCross
+Black Red #101010 #202020
+.3.3.
+32.23
+..1..
+02.20
+.0.0.
+
+UpLaser
+Red
+..0..
+..0..
+..0..
+..0..
+..0..
+
+DownLaser
+Red
+..0..
+..0..
+..0..
+..0..
+..0..
+
+
+RightLaser
+Red
+.....
+.....
+00000
+.....
+.....
+
+LeftLaser
+Red
+.....
+.....
+00000
+.....
+.....
+
+LeftEnteringLaser
+Red
+.....
+.....
+000..
+.....
+.....
+
+RightLeavingLaser
+Red
+.....
+.....
+..000
+.....
+.....
+
+RightEnteringLaser
+Red
+.....
+.....
+..000
+.....
+.....
+
+LeftLeavingLaser
+Red
+.....
+.....
+000..
+.....
+.....
+
+
+LaserSecondChanceLeft
+transparent
+
+LaserSecondChanceRight
+transparent
+
+LeftLaserHasLeft
+transparent
+
+RightLaserHasLeft
+transparent
+
+ConveyorSwitch
+#11114e #31317e #00A4A0 #30C4C0 #10302F #3C3C89
+55550
+51110
+32224
+32224
+32224
+
+SwitchTrigger
+red
+
+ConveyorSoundPlayer
+transparent
+
+LaserSoundPlayer
+transparent
+
+PressedSwitch
+#11114e #31317e #00A4A0 #30C4C0 #10302F #3C3C89
+22222
+22222
+55550
+32224
+32224
+
+
+
+TempConveyor
+transparent
+
+TeleporterLeft
+green black
+00000
+.1110
+...10
+.1110
+00000
+
+TeleporterRight
+green black
+00000
+0111.
+01...
+0111.
+00000
+
+ActiveTeleporterLeft
+transparent
+
+ActiveTeleporterLeftSprite
+#80FF80
+00000
+....0
+....0
+....0
+00000
+
+ActiveTeleporterRight
+transparent
+
+ActiveTeleporterRightSprite
+#80FF80
+00000
+0....
+0....
+0....
+00000
+
+FakeTeleporterLeft
+green
+00000
+....0
+....0
+....0
+00000
+
+FakeTeleporterRight
+green
+00000
+0....
+0....
+0....
+00000
+
+
+UnsolvableDummy
+black white
+1.1.1
+.1.1.
+1.1.1
+.1.1.
+1.1.1
+
+Digit0
+#555555 #666666
+.....
+.000.
+.011.
+.011.
+.....
+
+Digit1
+#008F00 #00FF00
+.....
+.000.
+.011.
+.011.
+.....
+
+
+=======
+LEGEND
+=======
+
+. = Background
+# = Wall
+P = PlayerStationaryReal
+* = Crate
+@ = Crate and Target
+O = Target
+C = Cloner
+U = Uncloner
+1 = DownArrow and Target
+2 = DownArrow
+3 = LeftArrow and Target
+4 = LeftArrow
+5 = RightArrow and Target
+6 = RightArrow
+7 = UpArrow and Target
+8 = UpArrow
+
+> = RightConveyor
+^ = UpConveyor
+v = DownConveyor
+< = LeftConveyor
+e = Earth
+x = LaserCross
+z = BoxedCloner
+/ = Crate and UpConveyor
+\ = Crate and DownConveyor
+" = Crate and LeftConveyor
+' = Crate and RightConveyor
+T = ConveyorSwitch
+: = BorderBackground
+s = BoxedCloner and Target
+] = TeleporterLeft
+[ = TeleporterRight
+? = UnsolvableDummy
+$ = TeleporterLeft and UpConveyor
+% = TeleporterRight and UpConveyor
+M = ClonerFactory0
+L = LogObject0
+; = LaserCross and DownConveyor
+} = Wall and Digit0
+| = Wall and Digit1
+
+PlayerStationary = PlayerStationaryReal or PlayerStationaryX1 or PlayerStationaryX2 or PlayerStationaryX3
+Player = PlayerUp or PlayerDown or PlayerLeft or PlayerRight or PlayerStationary
+
+Conveyor = RightConveyor or UpConveyor or DownConveyor or LeftConveyor or TempConveyor
+DownConveyorSprite = DownConveyorSprite0 or DownConveyorSprite1 or DownConveyorSprite2 or DownConveyorSprite3 or  DownConveyorSprite4
+UpConveyorSprite = UpConveyorSprite0 or UpConveyorSprite1 or UpConveyorSprite2 or UpConveyorSprite3 or  UpConveyorSprite4
+LeftConveyorSprite = LeftConveyorSprite0 or LeftConveyorSprite1 or LeftConveyorSprite2 or LeftConveyorSprite3 or LeftConveyorSprite4
+RightConveyorSprite = RightConveyorSprite0 or RightConveyorSprite1 or RightConveyorSprite2 or RightConveyorSprite3 or RightConveyorSprite4
+Arrow = LeftArrow or RightArrow or DownArrow or UpArrow or StaticLeftArrow or StaticRightArrow or StaticDownArrow or StaticUpArrow
+Pushable = Crate or Arrow or DeadPlayer or BoxedCloner or TeleporterLeft or TeleporterRight
+
+FakeTeleporter = FakeTeleporterLeft or FakeTeleporterRight
+
+ClonableNotPlayer = Pushable or Earth or ConveyorSwitch or LaserCross or FakePlayer
+Clonable = Player or ClonableNotPlayer
+
+
+ClonerFactory = ClonerFactory0 or ClonerFactory1 or ClonerFactory2 or ClonerFactory3 or ClonerFactory4
+Movable = Player or Pushable or Cloner or Uncloner or FakePlayer or LaserCross or ClonerFactory
+Laser = UpLaser or DownLaser or LeftLaser or RightLaser
+LaserBarrier = Player or Pushable or Wall or Earth or Cloner or Uncloner or ConveyorSwitch or PressedSwitch or FakeTeleporterLeft or FakeTeleporterRight
+UpLaserOrigin = UpLaser or LaserCross
+DownLaserOrigin = DownLaser or LaserCross
+RightLaserOrigin = RightLaser or LaserCross or RightLeavingLaser
+LeftLaserOrigin = LeftLaser or LaserCross
+Yellow = Arrow or Crate
+
+TeleporterRightRealOrFake = TeleporterRight or FakeTeleporterRight
+TeleporterLeftRealOrFake = TeleporterLeft or FakeTeleporterLeft
+TeleporterRealOrFake = TeleporterRightRealOrFake or TeleporterLeftRealOrFake
+DummyTeleportLaser = LeftEnteringLaser or RightLeavingLaser or LeftLaserHasLeft or RightLaserHasLeft or RightEnteringLaser or LeftLeavingLaser
+PlayerMoved = PlayerUp or PlayerDown or PlayerLeft or PlayerRight
+PlayerMover = Conveyor or FakeTeleporter
+RealOrFakePlayer = Player or FakePlayer
+
+BackgroundOrConveyor = Background or Conveyor
+
+
+( 8
+ 4 6
+  2  )
+
+=======
+SOUNDS
+=======
+
+SFX0 977103   (clone)
+SFX1 70044902 (unclone)
+SFX2 75104302 (laser kills player)
+SFX3 41701308 (conveyor moves something)
+SFX4 7534107 (remove earth)
+SFX5 76873507 (push button)
+SFX6 2350100  (container enters target)
+SFX7 53446708 (laser created)
+SFX8 59877108 (laser destroyed)
+SFX9 84512902 (teleportation)
+SFX10 39537502 (Clone Unleashed)
+EndLevel 30738908
+
+================
+COLLISIONLAYERS
+================
+
+Background
+Background1 Background2
+BorderBackground
+Conveyor, Target
+DownConveyorSprite
+UpConveyorSprite
+LeftConveyorSprite
+RightConveyorSprite
+ConveyorUpBorder
+ConveyorDownBorder
+ConveyorLeftBorder
+ConveyorRightBorder
+UpLaser
+LeftLaser
+DownLaser
+RightLaser
+Player, Wall, Crate, Cloner, Uncloner, Clonable, Earth , LaserCross, BoxedCloner, ConveyorSwitch, PressedSwitch, FakePlayer, ClonerFactory
+FakeTeleporterLeft, FakeTeleporterRight
+LogObject0, LogObject1, LogObject2
+SwitchTrigger
+ConveyorSoundPlayer
+TargetSoundPlayer
+LaserSoundPlayer
+ActiveTeleporterLeft
+ActiveTeleporterRight
+ActiveTeleporterLeftSprite
+ActiveTeleporterRightSprite
+LeftEnteringLaser
+RightLeavingLaser
+RightEnteringLaser
+LeftLeavingLaser
+LeftLaserHasLeft, RightLaserHasLeft
+LaserSecondChanceLeft
+LaserSecondChanceRight
+UnsolvableDummy
+WallUpBorder
+WallLeftBorder
+WallDownBorder
+WallRightBorder
+Digit0, Digit1
+
+======
+RULES     
+======
+
+[ PlayerMover Player ] -> [ PlayerMover FakePlayer ]
+
+[ FakeTeleporterLeft Movable ] -> [ FakeTeleporterLeft left Movable ]
+[ FakeTeleporterRight Movable ] -> [ FakeTeleporterRight right Movable ]
+[ > Movable | FakeTeleporter ] -> [ stationary Movable | FakeTeleporter ]
+
+
+[ RealOrFakePlayer Laser ] -> [ DeadPlayer Laser ] SFX2
+[ BoxedCloner Laser ] -> [ Cloner Laser ] SFX10
+
+[ Laser LaserBarrier ] -> [ LaserBarrier ]
+up [ UpLaserOrigin | RealOrFakePlayer No FakeTeleporter ] -> [ UpLaserOrigin | DeadPlayer ] SFX2
+down [ DownLaserOrigin | RealOrFakePlayer No FakeTeleporter ] -> [ DownLaserOrigin | DeadPlayer ] SFX2
+right [ RightLaserOrigin | RealOrFakePlayer No FakeTeleporterRight ] -> [ RightLaserOrigin | DeadPlayer ] SFX2
+left [ LeftLaserOrigin | RealOrFakePlayer No FakeTeleporterLeft ] -> [ LeftLaserOrigin | DeadPlayer ] SFX2
+
+
+[ Movable UpConveyor No FakeTeleporter ] -> [ up Movable UpConveyor ]
+[ Movable RightConveyor No FakeTeleporter ] -> [ right Movable RightConveyor ]
+[ Movable LeftConveyor  No FakeTeleporter ] -> [ left Movable LeftConveyor ]
+[ Movable DownConveyor  No FakeTeleporter  ] -> [ down Movable DownConveyor ]
+
+([ > Movable Conveyor | Movable ] -> [ stationary Movable Conveyor | FakeTeleporter ])
+
+
+up [ UpLaserOrigin | BoxedCloner No FakeTeleporter ] -> [ UpLaserOrigin | Cloner ] SFX10
+down [ DownLaserOrigin | BoxedCloner No FakeTeleporter ] -> [ DownLaserOrigin | Cloner ] SFX10
+right [ RightLaserOrigin | BoxedCloner No FakeTeleporterRight ] -> [ RightLaserOrigin | Cloner ] SFX10
+left [ LeftLaserOrigin | BoxedCloner No FakeTeleporterLeft ] -> [ LeftLaserOrigin | Cloner ] SFX10
+
+[ Cloner FakeTeleporterLeft ] -> [ TeleporterLeft ] SFX0
+[ Cloner FakeTeleporterRight ] -> [ TeleporterRight ] SFX0
+
+late [ LaserBarrier Laser ] -> [ LaserBarrier ]
+
+(Prioritize cloning non-players)
+[ FakeTeleporterLeft | Cloner ] -> [ FakeTeleporterLeft | > TeleporterLeft ] SFX0
+[ FakeTeleporterRight | Cloner ] -> [ FakeTeleporterRight | > TeleporterRight ] SFX0
+
+[ ClonableNotPlayer No FakeTeleporter | Cloner ] -> [ ClonableNotPlayer | > ClonableNotPlayer ] SFX0
+[ Player No FakeTeleporter | Cloner ] -> [ Player | > Player ] SFX0
+
+(Prioritize uncloning non-players)
+[ Clonable FakeTeleporter | Uncloner ] -> [ > Cloner | ] SFX1
+[ ClonableNotPlayer No FakeTeleporter | Uncloner ] -> [ > Cloner |  ] SFX1
+[ Player No FakeTeleporter | Uncloner ] -> [ > Cloner |  ] SFX1
+
+[ Stationary RightArrow ] -> [ Right StaticRightArrow ]
+[ Stationary LeftArrow ] -> [ Left StaticLeftArrow ]
+[ Stationary UpArrow ] -> [ Up StaticUpArrow ]
+[ Stationary DownArrow ] -> [ Down StaticDownArrow ]
+late [ StaticRightArrow ] -> [ RightArrow ]
+late [ StaticDownArrow ] -> [ DownArrow ]
+late [ StaticUpArrow ] -> [ UpArrow ]
+late [ StaticLeftArrow ] -> [ LeftArrow ]
+
+
+
+[ > RealOrFakePlayer Conveyor | FakeTeleporter ]-> [ stationary RealOrFakePlayer Conveyor | stationary FakeTeleporter ]
+
+[ > Movable Conveyor No TeleporterRealOrFake | FakeTeleporter ]-> [ stationary Movable Conveyor | FakeTeleporter ]
+
+( I don't remember why I added these rules probably some odd behavior. But they break another thing )
+
+([ > RealOrFakePlayer Conveyor | TeleporterRealOrFake No FakeTeleporter ]-> [ stationary RealOrFakePlayer Conveyor | > TeleporterRealOrFake ])
+
+()
+
+
+(repeat #0)
+[ > Movable Conveyor No TeleporterRealOrFake | FakeTeleporter ]-> [ stationary Movable Conveyor | FakeTeleporter ]
+
+
+
+[ > Player | Earth  ] -> [  | Player ] SFX4
+[ > FakePlayer | Earth  ] -> [  | FakePlayer ] SFX4
+
+
+late [ LaserCross ] -> [ LaserCross UpLaser LeftLaser RightLaser DownLaser ]
+
+late up [ UpLaser | No LaserBarrier ] -> [ UpLaser | UpLaser ]
+down [ UpLaser No LaserCross | No UpLaserOrigin ] -> [ | No UpLaserOrigin ]
+
+late right [ RightLaser | No LaserBarrier ] -> [ RightLaser | RightLaser ]
+left [ RightLaser No LaserCross | No RightLaserOrigin ] -> [ | No RightLaserOrigin ]
+
+late left [ LeftLaser | No LaserBarrier ] -> [ LeftLaser | LeftLaser ]
+right [ LeftLaser No LaserCross | No LeftLaserOrigin ] -> [ | No LeftLaserOrigin ]
+
+late down [ DownLaser | No LaserBarrier ] -> [ DownLaser | DownLaser ]
+up [ DownLaser No LaserCross | No DownLaserOrigin ] -> [ | No DownLaserOrigin ]
+
+down [ down RealOrFakePlayer | ConveyorSwitch ] -> [ RealOrFakePlayer | ConveyorSwitch SwitchTrigger ] SFX5
+
+[ > ConveyorSwitch ] -> [ ConveyorSwitch ]
+
+[ PressedSwitch ] -> [ ConveyorSwitch ]
+late [ LeftConveyor ][ SwitchTrigger ] -> [ TempConveyor ][ SwitchTrigger ]
+late [ RightConveyor ][ SwitchTrigger ] -> [ LeftConveyor ][ SwitchTrigger ]
+late [ TempConveyor ][ SwitchTrigger ] -> [ RightConveyor ][ SwitchTrigger ]
+
+late [ UpConveyor ][ SwitchTrigger ] -> [ TempConveyor ][ SwitchTrigger ]
+late [ DownConveyor ][ SwitchTrigger ] -> [ UpConveyor ][ SwitchTrigger ]
+late [ TempConveyor ][ SwitchTrigger ] -> [ DownConveyor ][ SwitchTrigger ]
+
+late [ SwitchTrigger  ConveyorSwitch ] -> [ PressedSwitch  ]
+late [ SwitchTrigger ] -> [   ]
+
+
+[ > FakePlayer | Pushable No Conveyor ] -> [ > FakePlayer | > Pushable ]
+
+[ down PlayerUp ] -> [ PlayerStationaryReal ]
+[ up PlayerDown ] -> [ PlayerStationaryReal ]
+[ left PlayerRight ] -> [ PlayerStationaryReal ]
+[ right PlayerLeft ] -> [ PlayerStationaryReal ]
+[ up Player ] -> [ up PlayerUp ]
+[ down Player ] -> [ down PlayerDown ]
+[ right Player ] -> [ right PlayerRight ]
+[ left Player ] -> [ left PlayerLeft ]
+[ stationary PlayerUp ] -> [ PlayerStationaryReal ]
+[ stationary PlayerDown ] -> [ PlayerStationaryReal ]
+[ stationary PlayerRight ] -> [ PlayerStationaryReal ]
+[ stationary PlayerLeft ] -> [ PlayerStationaryReal ]
+
+
+[ >  Player | Pushable No Conveyor ] -> [  >  Player | > Pushable  ]
+
+
+(Kye-style teleportation (is really tough to do) )
+right [ right Movable | TeleporterLeft | ... | TeleporterRight ] -> [ | stationary TeleporterLeft | ... | FakeTeleporterRight right Movable ] sfx9
+
+right [ TeleporterRight | ... | right Movable | TeleporterLeft ] -> [ FakeTeleporterRight right Movable | ... | | stationary TeleporterLeft ] sfx9
+
+right [ TeleporterLeft | ... | TeleporterRight | left Movable ] -> [ left Movable FakeTeleporterLeft | ... | stationary TeleporterRight | ] sfx9
+
+
+right [ TeleporterRight | left Movable | ... | TeleporterLeft  ] -> [ stationary TeleporterRight | | ... | left Movable FakeTeleporterLeft ] sfx9
+
+(repeat #1 again because hmn)
+[ > Movable | FakeTeleporter ]-> [ stationary Movable | FakeTeleporter ]
+
+
+(Mark teleporters as active )
+horizontal [ TeleporterRightRealOrFake | ... | TeleporterLeftRealOrFake ] -> [ TeleporterRightRealOrFake ActiveTeleporterRight | ... | TeleporterLeftRealOrFake ActiveTeleporterLeft ]
+
+late [ ActiveTeleporterRightSprite ] -> []
+late [ ActiveTeleporterLeftSprite ] -> []
+
+(Show active sprite for this frame)
+late [ ActiveTeleporterLeft TeleporterLeftRealOrFake ] -> [ ActiveTeleporterLeftSprite TeleporterLeftRealOrFake ]
+late [ ActiveTeleporterRight TeleporterRightRealOrFake ] -> [ ActiveTeleporterRightSprite TeleporterRightRealOrFake ]
+(remove active flag)
+late [ ActiveTeleporterLeft ] -> []
+late [ ActiveTeleporterRight ] -> []
+
+
+
+( Give the player a new chance to push after being teleported)
+[ >  Player FakeTeleporter | Pushable No Conveyor ] -> [  >  Player FakeTeleporter | > Pushable  ]
+
+( Clean up the fake teleporters (if possible) )
+late [ FakeTeleporterLeft no Movable ] ->  [ TeleporterLeft ]
+late [ FakeTeleporterRight no Movable ] ->  [ TeleporterRight ]
+
+
+(Laser Teleportation Because I am insane apparently)
+
+right [ TeleporterRightRealOrFake RightLeavingLaser no RightLaserHasLeft | TeleporterLeftRealOrFake no RightEnteringLaser ] -> [ TeleporterRightRealOrFake  | LaserSecondChanceLeft TeleporterLeftRealOrFake ]
+
+right [ TeleporterRightRealOrFake no LeftEnteringLaser | TeleporterLeftRealOrFake LeftLeavingLaser no LeftLaserHasLeft ] ->  [ TeleporterRightRealOrFake LaserSecondChanceRight | TeleporterLeftRealOrFake  ]
+
+
+
+[ DummyTeleportLaser ] -> []
+[ LaserSecondChanceLeft ] -> [ LeftEnteringLaser ]
+[ LaserSecondChanceRight ] -> [ RightEnteringLaser ]
+
+right [ RightLaserOrigin | TeleporterLeftRealOrFake no LeftEnteringLaser ] -> [ RightLaserOrigin | TeleporterLeftRealOrFake LeftEnteringLaser ]
+horizontal [ LeftEnteringLaser No LeftLaserHasLeft | ... | TeleporterRightRealOrFake no RightLeavingLaser ] -> [ LeftEnteringLaser LeftLaserHasLeft | ...| TeleporterRightRealOrFake RightLeavingLaser ]
+right [ RightLeavingLaser | no LaserBarrier ] -> [ RightLeavingLaser | RightLaser ] (Maybe Laser rules need to be rewritten, this shouldn't be necessary because RightLeavingLaser is a RightLaserOrigin ??? )
+right [ RightLeavingLaser | RealOrFakePlayer ] -> [ RightLeavingLaser | DeadPlayer ] sfx2
+right [ RightLeavingLaser | BoxedCloner ] -> [ RightLeavingLaser | Cloner ] SFX10
+
+(Now the same for Left: )
+right [ TeleporterRightRealOrFake no RightEnteringLaser | LeftLaserOrigin  ] -> [ TeleporterRightRealOrFake RightEnteringLaser | LeftLaserOrigin  ]
+
+horizontal [ RightEnteringLaser No RightLaserHasLeft | ... | TeleporterLeftRealOrFake no LeftLeavingLaser ] -> [ RightEnteringLaser RightLaserHasLeft | ...| TeleporterLeftRealOrFake LeftLeavingLaser ]
+left [ LeftLeavingLaser | no LaserBarrier ] -> [ LeftLeavingLaser | LeftLaser ] (Maybe Laser rules need to be rewritten, this shouldn't be necessary because RightLeavingLaser is a LeftLaserOrigin )
+left [ LeftLeavingLaser | RealOrFakePlayer ] -> [ LeftLeavingLaser | DeadPlayer ] sfx2
+left [ LeftLeavingLaser | BoxedCloner ] -> [ LeftLeavingLaser | Cloner ] SFX10
+
+
+
+[ Yellow Target no TargetSoundPlayer ] -> [  Yellow Target TargetSoundPlayer ] SFX6
+[ Movable Conveyor no ConveyorSoundPlayer ] ->[ Movable Conveyor ConveyorSoundPlayer ]
+
+[ Laser No LaserSoundPlayer] -> [ Laser LaserSoundPlayer] sfx7
+
+late [ Conveyor ConveyorSoundPlayer No Movable ] ->[ Conveyor No Movable ] sfx3
+late [ TargetSoundPlayer Target No Yellow ] -> [ Target No Yellow ]
+late [ LaserSoundPlayer No Laser ] -> [ No Laser ] sfx8
+
+late [ FakePlayer No PlayerMover ] -> [ PlayerStationaryReal ]
+
+(Wall borders)
+late up [ Wall | no Wall ] -> [ Wall WallUpBorder |  ]
+late down [ Wall | no Wall ] -> [ Wall WallDownBorder |  ]
+late right [ Wall | no Wall ] -> [ Wall WallRightBorder |  ]
+late left [ Wall | no Wall ] -> [ Wall WallLeftBorder |  ]
+
+(Borders between ground and conveyor belts)
+
+(
+late up [ Conveyor | No Conveyor ] -> [ Conveyor ConveyorUpBorder | ]
+late down [ Conveyor | No Conveyor ] -> [ Conveyor ConveyorDownBorder |  ]
+late right [ Conveyor | No Conveyor ] -> [ Conveyor ConveyorRightBorder | ]
+late left [ Conveyor | No Conveyor ] -> [ Conveyor ConveyorLeftBorder | ]
+)
+
+late up [ UpConveyor | No UpConveyor ] -> [ UpConveyor ConveyorUpBorder | ]
+late down [ UpConveyor | No UpConveyor ] -> [ UpConveyor ConveyorDownBorder |  ]
+late right [ UpConveyor | No UpConveyor ] -> [ UpConveyor ConveyorRightBorder | ]
+late left [ UpConveyor | No UpConveyor ] -> [ UpConveyor ConveyorLeftBorder | ]
+
+late up [ DownConveyor | No DownConveyor ] -> [ DownConveyor ConveyorUpBorder | ]
+late down [ DownConveyor | No DownConveyor ] -> [ DownConveyor ConveyorDownBorder |  ]
+late right [ DownConveyor | No DownConveyor ] -> [ DownConveyor ConveyorRightBorder | ]
+late left [ DownConveyor | No DownConveyor ] -> [ DownConveyor ConveyorLeftBorder | ]
+
+late up [ LeftConveyor | No LeftConveyor ] -> [ LeftConveyor ConveyorUpBorder | ]
+late down [ LeftConveyor | No LeftConveyor ] -> [ LeftConveyor ConveyorDownBorder |  ]
+late right [ LeftConveyor | No LeftConveyor ] -> [ LeftConveyor ConveyorRightBorder | ]
+late left [ LeftConveyor | No LeftConveyor ] -> [ LeftConveyor ConveyorLeftBorder | ]
+
+late up [ RightConveyor | No RightConveyor ] -> [ RightConveyor ConveyorUpBorder | ]
+late down [ RightConveyor | No RightConveyor ] -> [ RightConveyor ConveyorDownBorder |  ]
+late right [ RightConveyor | No RightConveyor ] -> [ RightConveyor ConveyorRightBorder | ]
+late left [ RightConveyor | No RightConveyor ] -> [ RightConveyor ConveyorLeftBorder | ]
+
+((Borders between conveyor belts)
+late down [ DownConveyor | Conveyor No DownConveyor ] -> [ DownConveyor ConveyorDownBorder | Conveyor ]
+late right [ DownConveyor | Conveyor No DownConveyor ] -> [ DownConveyor ConveyorRightBorder | Conveyor ]
+late down [ UpConveyor | Conveyor No UpConveyor ] -> [ UpConveyor ConveyordownBorder | Conveyor ]
+late right [ UpConveyor | Conveyor No UpConveyor ] -> [ UpConveyor ConveyorRightBorder | Conveyor ])
+
+
+late [ DownConveyorSprite no DownConveyor ] -> []
+late [ DownConveyorSprite4 ] ->[  ]
+late [ DownConveyorSprite3 ] ->[ DownConveyorSprite4 ]
+late [ DownConveyorSprite2 ] ->[ DownConveyorSprite3 ]
+late [ DownConveyorSprite1 ] ->[ DownConveyorSprite2 ]
+late [ DownConveyorSprite0 ] ->[ DownConveyorSprite1 ]
+late [ DownConveyor no DownConveyorSprite ] -> [ DownConveyor DownConveyorSprite0 ]
+
+late [ UpConveyorSprite no UpConveyor ] -> []
+late [ UpConveyorSprite4 ] ->[  ]
+late [ UpConveyorSprite3 ] ->[ UpConveyorSprite4 ]
+late [ UpConveyorSprite2 ] ->[ UpConveyorSprite3 ]
+late [ UpConveyorSprite1 ] ->[ UpConveyorSprite2 ]
+late [ UpConveyorSprite0 ] ->[ UpConveyorSprite1 ]
+late [ UpConveyor no UpConveyorSprite ] -> [ UpConveyor UpConveyorSprite0 ]
+
+late [ LeftConveyorSprite no LeftConveyor ] -> []
+late [ LeftConveyorSprite4 ] ->[  ]
+late [ LeftConveyorSprite3 ] ->[ LeftConveyorSprite4 ]
+late [ LeftConveyorSprite2 ] ->[ LeftConveyorSprite3 ]
+late [ LeftConveyorSprite1 ] ->[ LeftConveyorSprite2 ]
+late [ LeftConveyorSprite0 ] ->[ LeftConveyorSprite1 ]
+late [ LeftConveyor no LeftConveyorSprite ] -> [ LeftConveyor LeftConveyorSprite0 ]
+
+late [ RightConveyorSprite no RightConveyor ] -> []
+late [ RightConveyorSprite4 ] ->[  ]
+late [ RightConveyorSprite3 ] ->[ RightConveyorSprite4 ]
+late [ RightConveyorSprite2 ] ->[ RightConveyorSprite3 ]
+late [ RightConveyorSprite1 ] ->[ RightConveyorSprite2 ]
+late [ RightConveyorSprite0 ] ->[ RightConveyorSprite1 ]
+late [ RightConveyor no RightConveyorSprite ] -> [ RightConveyor RightConveyorSprite0 ]
+
+
+late left [ Background  No Background1 No Background2 | Background No Background2 No Background1 ] -> [ Background Background1 | Background Background2 ]
+
+late down [ Background1 | Background1 ] -> [ Background1 | Background2 ]
+late down [ Background2 | Background2 ] -> [ Background2 | Background1 ]
+
+late [ Background1 | Background No Background1  No Background2 ] -> [ Background1 | Background Background2 ]
+late [ Background2 | Background No Background1  No Background2 ] -> [ Background1 | Background Background1 ]
+
+late [ ClonerFactory4 | No Movable No Wall  No Earth ] -> [ ClonerFactory0 | Cloner ] SFX0
+late [ ClonerFactory3 ] -> [ ClonerFactory4 ]
+late [ ClonerFactory2 ] -> [ ClonerFactory3 ]
+late [ ClonerFactory1 ] -> [ ClonerFactory2 ]
+late [ ClonerFactory0 ] -> [ ClonerFactory1 ]
+( late [ ClonerFactory4 ] -> [ ClonerFactory0 ] )
+
+( Narrative )
+
+late [ LogObject1 Player ] -> [ Player ] checkpoint message Major breakthrough! Turns out that with a dash of Pepper, Sample #420 becomes ultra-reactive and starts cryptotransmuting nearby air molecules into copies of #420! 
+
+late [ LogObject0 Player ] -> [ LogObject1 Player ] message Dr. Hertz log #2056
+
+
+
+(skip level)
+[ action PlayerStationaryX3 ] -> win SFX6
+[ action PlayerStationaryX2 ] -> [ PlayerStationaryX3 ] SFX6
+[ action PlayerStationaryX1 ] -> [ PlayerStationaryX2 ] SFX6
+[ action PlayerStationaryReal ] -> [ PlayerStationaryX1 ] SFX6
+(For debug )
+[ action Player ][ UnsolvableDummy ]  -> [ Player ][ UnsolvableDummy ]
+
+
+
+==============
+WINCONDITIONS
+==============
+
+All Target on Yellow
+Some Target
+No UnsolvableDummy
+
+=======     
+LEVELS
+=======
+
+Message - Finally! We've been looking all over the world for people willing to work for us cleaning up our labs.
+
+
+Message Why are you so blue? It's your first day at an exciting new job. You'll be surrounded by science! And the job couldn't be easier.
+
+Message Just put all those yellow containers on the assigned container locations.
+
+Message Use arrow keys to move and press r to undo. Press X many times in a row to skip a lab.
+
+Message If you see a red blob thing, definitely do not touch it. Dr. Hertz has been working on that experiment and doesn't want it to be disturbed.
+
+
+#######
+#c....#
+###.o.#
+#.....#
+#p.#*.#
+#..*.o#
+##}}}}}
+
+
+Message - See? It wasn't hard at all. I hope you didn't touch the red goo.
+
+Message This lab is supposed to have two yellow containers. Guess you'll have to go all the way to the 45-th floor to find a replacement container.
+
+Message Elevators are for Authorized personel only and have been disabled during cleaning hours.
+
+#########
+#.......#
+#....c..#
+#..##.###
+#...@.o.#
+#..P....#
+####}}}}|
+
+Message - There's some dirt blocking this container, you are going to have to clean up the dirt before moving it.
+
+#################
+#...eee##.#.....#
+#....ee##^#...c.#
+#.....e##^#.....#
+#....oe*.^......#
+#....###...eep..#
+#....###....ee..#
+#.....<.........#
+############}}}|}
+
+
+Message - Due to the lack of willing crew members we've contracted the services of a company that makes self-moving containers.
+
+Message For 10 dollars a month the container moves in one direction exclusively. For 10000000 dollars a month, the container moves in more than one direction.
+
+Message So.. I wouldn't be worrying much about my job security if I were you.
+
+#############
+#..2.......o#
+#..2........#
+#..6666e....#
+o........p..#
+#.*.#.#..#..#
+#...c...c..8#
+##o#o#o##o###
+########}}}||
+
+
+
+Message Dr Hertz' Log #13
+Message After Extensive analysis of Sample #474's properties, I have concluded that it is actually the same as sample #420 but in a sort of primordial state.
+
+############
+##o.########
+##ee...#####
+##Pe#u..####
+#........*o#
+#....#######
+##e....o####
+##8...*.####
+##.#....####
+#######}}|}}
+
+
+
+
+
+Message Dr Hertz' Log #98
+Message Progress in my analysis of sample #420 is on schedule.
+Message Too many clones at once can be burdensome. I've requested laser equipment from IT to deal with this.
+
+######x##########
+#......#..u..>*o#
+#......#.....####
+#.c#c#...*.p.>.o#
+#............####
+#########u#######
+############}}|}|
+
+Message - Hey there. Huh did those egg heads leave their computer on? Ffs it distracts the workers. I'll tell IT to shut them down.
+
+Message Focus on your job. For example this one lab has way more containers than assigned locations... I bet you can finish this one pretty quick!
+
+#################
+#...e.......#####
+#...e.....*.#xxx#
+#...e.p...*....o#
+#..6e.....*....o#
+#.........*....o#
+#..uuuuu..*....o#
+#..#####....#xxx#
+############}}||}
+
+Message Dr Hertz log #801
+Message The Clones are no longer a problem. The corpses have begun to use too much room though.
+
+#############
+#...#x#.....#
+#...>v#..u..#
+#.c.#v#.....#
+#...#>>>....#
+#...#>>>..o.#
+#..>>^#...@.#
+#..####....p#
+#...<<<.....#
+########}}|||
+
+Message Dr Hertz log #787
+Message Transporting fragments of sample #420 has been an understandably-tough logistics problem.
+Message The cryptotransmutation process reacts too easily. The only exception are gray materials. So I just had an idea! A gray box that can hold #420 reasonably-safe while being transported.
+
+Message Next thing I have to test is what happens when the box is exposed to heat.
+
+#################
+#.............x.#
+#..2.#...##.....#
+#..z.#.o........#
+#....####.#.....#
+#..z......#.....#
+#.........#.p...#
+#....vvvv.#.....#
+#x........#...*.#
+############}|}}}
+
+Message Dr Hertz log #799
+Message Dr Ritz challenged my idea of a gray box to transport sample #420 "But how are you going to place #420 inside the box to begin with"?
+Message The answer to that question is so obvious, that I refuse to document it.
+
+
+##################
+#o.....''''\.....#
+##...../''\\.....#
+#4.....//xv\.....#
+##.....//<<\.....#
+#....../<<<<...c.#
+#...z............#
+#............P...#
+#......o#2#......#
+#############}|}}|
+
+Message - What on earth? I thought IT were supposed to shut down all computers?
+Message Oh wait, this computer is a clone. I guess IT's shutdown command didn't account for this.
+Message Hey you! Stop wikiwalking or whatever you kids call it now. And get back to work.
+Message Look at this one lab. Ffs the container is right next to the container location. Just give it one push.
+
+###################
+#...........#o#####
+#...###.....#*#####
+#...#.#^^^^^#.#####
+#.....#^^^^^#.#####
+#..##.#^^^^^#.#...#
+#..#x^>^^^^^^.#.#.#
+#..######...#...#.#
+#...........#####.#
+#........z.z.z.z..#
+#..........p......#
+##############}|}|}
+
+Message Dr Hertz log #1001
+Message As Dr. Ritz still hasn't figured out how to put sample #420 in the gray boxes, they've been testing a conveyor belt-based system with a button to switch directions.
+Message This is quite ridiculous and over-complicated in comparison to my genius grey box idea.
+
+
+#################
+##..#.......#####
+##<<<.......>.*o#
+##..#.....p.#####
+##....z.....>.*o#
+##..#...t...#####
+##..#..###..>.*o#
+##xx#.#####.#####
+############}|}||
+
+
+
+Message - Hey! What is even that? A paper diary? Why would the scientists be wasting time on such ancient logging tech?
+
+Message Stop getting distracted by their logs and pay attention to this room. It's disgusting!
+
+Message Where does all this dirt come from anyway?
+
+###################v##
+###e.e>.u.eeeee>...\x#
+o*>p.e>e.eeee.e#.t.###
+###..e>eeeee.u.#..x#o#
+###c.e>eeeeee.e#^^##c#
+o.>..e>eeeeeeee>...u.#
+###e*e>eeeee.ee#.<.#*#
+###eee>eeee.u.e#u....#
+#################}||}}
+
+Message Dr Hertz log #199
+Message While we work on solving the real complex questions about how to deal with Sample #420. Other divisions have answered the simple ones already.
+Message Our Molecular experts have confirmed that the cryptotransmutation process creates an exact replica of all the molecules of whatever it touches.
+Message Our Neurologists have confirmed that the clones feel pain.
+Message Our Philosophers have confirmed that the clones are indeed sentient and have personhood.
+Message And our Spiritists have confirmed that they do have a soul.
+
+
+##x##x#########
+##'>#<"#......#
+##^##^##.#t...#
+#e.......##p..#
+#*#########...#
+#eee#...e.c...#
+#o#e#xeee....x#
+###e#eee#######
+###eeeee#######
+##########}||}|
+
+Message - Heya. I've been trying to be nice but the night is only getting started and you only sorted out like 10 labs.
+
+###############2##
+###########...ee##
+###########.##6e##
+o.#..........#2e##
+#.#.z.z.z.p...ee##
+#..............8vv
+#..#o#4#*##...##vv
+###########t#...;v
+#############}|||}
+
+
+Message - And I am telling you. You can't just clone away all your problems.
+
+Message We need to get these labs ready before tomorrow so that the scientists can have a nice environment to do their important research without hurdles.
+
+Message We are not doing this just for the money, you know?
+
+
+#######x##//####
+##...##v##^^####
+##.z.6666e..o###
+####......######
+#x.2ep.t..o.2..x
+###ee..#....e..#
+o*>....>..e....#
+###o...#..8#o###
+###########}||||
+
+
+Message - Lunch break Time! Hey, newbie, I like you so far. So here's one pro tip. Do not get the Cafeteria food. It's really badly seasoned. It looks like Upper Management hate pepper or something.
+
+Message [When your Lunch Break is Over and you are ready to continue working, press X]
+
+Message - Whoah? Ready to get back to work already? Keep up this hard-working attitude and you might be promoted to a Minimum Wage position in only a few years!
+
+
+####################
+#..............^####
+#...p..........^.s6#
+#....z.z.......#####
+#..................#
+#........x.........#
+#..................#
+#....z.z...z.z.....#
+#..................#
+#..................#
+###############|}}}}
+
+Message Dr Hertz Log #2001
+Message That pompous Dr Boole just made a presentation about a ridiculous teleportation-based method to transport sample #420.
+Message I am not exactly sure how are we supposed to put #420 through those teleports. But they sure are a fancy waste of budget.
+
+
+#############
+#..###...####
+#.]##[.p.####
+#vv###..*####
+#..###..v<..x
+#...##.#.#24#
+#....#.#o#28#
+#..#.#[.c.2##
+#..#e#....2##
+###v8444444##
+#...##xxxxx##
+########|}}}|
+
+
+Message - Are you reading those eggheads' paper diaries again? Hmnn I've never noticed that they use gray paper. Those folks are all so plain and boring, so I am not surprised.
+Message I would tell you again to stop reading those things, but truth be told you've been through a lot of labs already.
+Message Most of the people we hire end up ... leaving due to health issues after visiting just a couple of labs.
+Message I guess you are doing something right. Still, try not getting too distracted with the reading material.
+
+#################
+####.....v#.#..c#
+####.]###v#p..###
+####..*eev#.[.o##
+#####.###v#.....#
+#..z<.###.#..#..x
+#.z.<.######....#
+#.zz<...#.....###
+#.....#..#.##..c#
+############|}}|}
+
+
+Message So huh ... I cannot help but question the wisdom of our management when they purchased those self-moving containers. This specific one seems to be doing the opposite of helping.
+
+################
+##.v.........v.#
+##..].#####[...#
+##.....o###....#
+#vv..#.####....#
+#.#<<.....p.>>>#
+#*#........#>..#
+#.#..........c.#
+#e.<....2.######
+#o#<....e......#
+###########|}}||
+
+
+Message Dr Hertz log #2034
+Message Cryptotransmutation is not magic. Although we colloquially refer to the results as "Clones", in reality they are the result of #420's molecules transforming themselves into another object's molecules.
+Message The Number of molecules is finite. It can't create something out of thin air.
+
+
+##################
+#o#o#o#o#o#o#o####
+#.#.#.#.#.#.#.####
+#.#.#.#.#.#.#.####
+#*#*#*#*#*#*#*####
+#^#^#^#^#^#^#^####
+#.............>*o#
+#.....@..@....####
+##.#########..####
+#....L..#o*<..>*o#
+#.m.#...####..####
+#...#...#o*<..>*o#
+#####.p.####..####
+#############|}|}}
+
+Message Dr Hertz log #2070
+Message If #420 was hard to handle in its typical state, once it's catalyzed by Pepper, it becomes really, really hard to deal with.
+Message The rest of the R&D team really want to ban Pepper from our installations. I am behemently opposed to it. What's going to be of the cafeteria?
+Message We have a responsibility here. Our research can't be without limits.
+Message To Sacrifice Lunch for this, it would be crossing the line.
+
+####################
+#########..........#
+#########.....2....#
+#########.#######*.#
+########mv##....#..#
+#########>>>..#....#
+############>......#
+###..########.p.#..#
+##..............#..#
+##.....#####....#..#
+x>o....<x###....#..#
+x>o.o..<x###....#..#
+##o^o^o#############
+###############|}|}|
+
+Message Dr. Hertz log #2085
+Message Thanks to our research into Sample #420 our production capabilities have skyrocketed! 
+Message No this won't help fix society's "lack of resoruces". Malthussian theory was debunked mere years after it was introduced.
+
+Message But, our CEO and investors will have plenty more things to hoard!
+
+######################
+####.................#
+####.................#
+####.........###.###.#
+##v..........><.o.><.#
+##v###.......###*###.#
+##v###.........###...#
+##v*o#...............#
+##v###...............#
+##v###.......###.###.#
+##;..........><.o.><.#
+####.........###*###.#
+#.]#...[...]...###...#
+#.##.................#
+#p.#...zz###......<###
+#..#...666e..#....<<m#
+####.....##t####....##
+#################|}||}
+
+Message - Good, Good.
+Message See ya tomorrow night.
+Message The End (Of this preliminary version *someone* needs to come up with an ending here)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
